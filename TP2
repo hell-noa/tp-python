@@ -1,0 +1,101 @@
+import random
+
+def ex1():
+    x=1
+    y=2
+    z=0
+    print(f'avant permutation:\nx : {x}\ny : {y}')
+    z=x
+    x=y
+    y=z
+    print(f'\napres permutation:\nx : {x}\ny : {y}')
+    
+    
+def ex2():
+    age=int(input("donnez votre age : "))
+    print(age)
+    année=2022-age
+    print('votre année de naissance est:',année)
+    
+    
+def ex4():
+    BASE=4
+    fromage= 800.0
+    eau=2
+    ail=2
+    pain=400
+    a=int(input('entrez le nombre de personnes conviées à la fondue : '))
+    n_fromage= fromage*a/BASE
+    n_eau= eau*a/BASE
+    n_ail = ail*a/BASE
+    n_pain = pain*a/BASE
+    print (f"Pour faire une fondu fribourgeoise pour {a} personnes, il vous faut :\n-{n_fromage} grammes de fromages\n-{n_eau} littres d'eau\n-{n_ail} gousse d'ail\n-{n_pain} gramme de pain")
+    
+
+def ex5():
+    a=int(input('donnez votre chiffre : '))
+    if a == 0:
+        print('le chiffre vaut 0')
+    elif a > 0:
+        if a%2 != 0:
+            print('le chiffre est positif et impaire')
+        else:
+            print('le chiffre est positif et paire')
+    else:
+        if a%2 != 0:
+            print('le chiffre est négatif et impaire')
+        else:
+            print('le chiffre est négatif et paire')
+    
+    
+def ex6():
+    a= random.randint(1,100)
+    if a < 50:
+        print ('pile !')
+    else:
+        print('face ! ')
+        
+def ex7():
+    a= random.randint(1,99)
+    if a < 66:
+        print ('pile !')
+    else:
+        print('face ! ')
+        
+
+def ex8():
+    x=int(input("rentrez votre chiffre : "))
+    if x>=2 and x<3:
+        print("la valeur est bien dans l'intervale I")
+    elif x>0 and x<=1:
+        print("la valeur est bien dans l'intervale I")
+    elif x>=-10 and x<=-2:
+        print("la valeur est bien dans l'intervale I")
+    else:
+        print("la valeur n'est pas dans l'intervale I")
+        
+    
+a=input("Entrez la premiere  valeur : ")
+b=input("Entrez la deuxieme  valeur : ")
+c=input("Entrez la troisieme valeur : ")
+
+
+print("Les valeurs entrees sont : a = " + a + ", b = " + b + " et c = " + c)
+print("Permutation: a ==> b, b ==> c, c ==> a")
+#a,b,c = b,c,a
+x=a
+y=c
+a=b
+b=y
+c=x
+
+
+print("Les valeurs permutees sont : a = " + a + ", b = " + b + " et c = " + c)
+    
+#ex1()
+#ex2()
+#ex4()
+#ex5()
+#ex6()
+#ex7()
+#ex8()
