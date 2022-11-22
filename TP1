@@ -1,0 +1,42 @@
+import random
+def exercice_1():
+    nom= str(input('votre nom : '))
+    prénom=str(input('votre prénom : '))
+    maths=int(input('votre note : '))
+    anglais=int(input('votre note : '))
+    info=int(input('votre note : '))
+    promotion=str(input('votre année '))
+    moy= (maths+anglais+info)/3
+    print("l'étudiant ",nom ,prénom,"de la promotion ",promotion,"a une moyenne de " ,moy,)
+    
+    
+def exercice_2():
+    jour=int(input('donner le nombre de jours : '))
+    heure=int(input('donner le nombre de heures : '))
+    minute=int(input('donner le nombre de minutes : '))
+    if jour>31:
+        return False
+    while heure>24:
+        heure -=24
+        jour+=1
+    while minute>60:
+        minute-=60
+        heure+=1
+    print (minute + heure*60 + jour*24*60)
+    
+    
+def exercice_4():
+    minute=int(input('donner le nombre de minutes : '))
+    print(minute//1440)
+    
+   
+def exercice_5():
+    a=random.randint(1,100)
+    print(a)
+    
+
+   
+#exercice_1()
+#exercice_2()
+#exercice_4()
+#exercice_5()
